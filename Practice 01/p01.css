@@ -1,0 +1,141 @@
+   /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .search-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1c1c1c, #333);
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffcc00;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1602532229085-b0b676b7d336');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h2 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 1;
+    }
+
+    .hero p {
+      position: relative;
+      z-index: 1;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 50%;
+      transition: transform 0.3s;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card iframe {
+      width: 100%;
+      height: 350px;
+      
+    }
+/* 
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    } */
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .card {
+        width: 100%;
+        h
+      }
+    }
